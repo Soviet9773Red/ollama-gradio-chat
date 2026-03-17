@@ -61,8 +61,9 @@ Install dependencies:
 ```
 pip install gradio ollama
 ```
+
 Or using requirements file:
-```
+```bash
 pip install -r requirements.txt
 ```
 
