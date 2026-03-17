@@ -1,8 +1,7 @@
 # ============================================================
+# @license (c) Alexander Soviet9773Red - https://github.com/Soviet9773Red/ollama-gradio-chat
 # Local AI Chat Interface
 # Ollama + Gradio
-#
-# Author: Alexander:  https://github.com/Soviet9773Red
 #
 # Description:
 # A lightweight local AI chat interface that connects to
@@ -18,7 +17,7 @@
 #
 # ============================================================
 APP_VERSION = "v2.1.1 build 20260316"
-DEFAULT_USER_NAME = "John Doe"
+DEFAULT_USER_NAME = "John Doe" # Replace with your name (used as default user identifier)
 # chat.py с Markdown-code in the answer body
 import gradio as gr
 import ollama
@@ -501,7 +500,6 @@ print(f"AI Chat version: {APP_VERSION}")
 demo.launch(
     theme=gr.themes.Origin(),
     server_name="0.0.0.0",
-    #server_port=7860
     server_port=port
 )
 print("GRADIO: server closed")
