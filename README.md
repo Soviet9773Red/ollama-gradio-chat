@@ -18,8 +18,7 @@ The interface is designed as a local AI laboratory for testing models and prompt
 - Numbered questions
 - Model-labelled answers
 - Optional Deep Thinking mode
-- Multi-language interface:
-- English, Swedish, Russian
+- Multi-language interface:   English, Swedish, Russian
 
 ## Screenshot
 
@@ -85,7 +84,7 @@ AI Chat version: v2.1.1 build 20260316
 * To create a public link, set `share=True` in `launch()`.
 ```
 
-Open the link in your browser med Ctrl+ Lmb
+Open the link in your browser with Ctrl+ LMB
 
 ## Interface overview
 
@@ -142,6 +141,16 @@ This interface can be used for:
 - model comparison
 - multilingual interaction
 - code generation testing
+
+## Custom UI animation
+
+The interface uses a GIF animation displayed at the top.
+
+The file must be placed in the same directory as `chat.py`: ai.gif
+
+You can replace `ai.gif` with your own animation.
+
+If the file is missing, the image will not be displayed.
 
 ### Version
 
