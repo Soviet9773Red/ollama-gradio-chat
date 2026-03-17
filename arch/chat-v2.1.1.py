@@ -16,7 +16,7 @@
 # - Multi-language UI (EN / SV / RU)
 #
 # ============================================================
-APP_VERSION = "v2.2.0 build 20260317"
+APP_VERSION = "v2.1.1 build 20260316"
 DEFAULT_USER_NAME = "John Doe" # Replace with your name (used as default user identifier)
 # chat.py с Markdown-code in the answer body
 import gradio as gr
@@ -292,7 +292,7 @@ def stream_markdown(history_md, model_name, text):
 # - sequential calls to Model A and Model B
 # - streaming responses
 
-def chat_fn(user_text, history, model_a, model_b, deep_thinking_enabled, streaming_enabled, lang_code):
+def chat_fn(user_text, history, model_a, model_b, deep_thinking_enabled, lang_code):
 
     if not user_text.strip():
         yield "", history, build_full_markdown(history)
@@ -310,17 +310,9 @@ def chat_fn(user_text, history, model_a, model_b, deep_thinking_enabled, streami
     text_a = ""
     start_a = time.time()
 
-    if streaming_enabled:
-        for partial in stream_model_answer(model_a, updated):
-            text_a = partial
-            yield "", updated, stream_markdown(history_md, model_a, text_a)
-    else:
-        response = ollama.chat(
-            model=model_a,
-            messages=updated,
-            stream=False
-        )
-        text_a = response["message"]["content"]
+    for partial in stream_model_answer(model_a, updated):
+        text_a = partial
+        yield "", updated, stream_markdown(history_md, model_a, text_a)
 
     time_a = time.time() - start_a
     ans_a = text_a + f"\n\n(⏱ {time_a:.2f}s)"
@@ -337,17 +329,9 @@ def chat_fn(user_text, history, model_a, model_b, deep_thinking_enabled, streami
         text_b = ""
         start_b = time.time()
 
-        if streaming_enabled:
-            for partial in stream_model_answer(model_b, updated):
-                text_b = partial
-                yield "", new_history, stream_markdown(history_md_b, model_b, text_b)
-        else:
-            response = ollama.chat(
-                model=model_b,
-                messages=updated,
-                stream=False
-            )
-            text_b = response["message"]["content"]
+        for partial in stream_model_answer(model_b, updated):
+            text_b = partial
+            yield "", new_history, stream_markdown(history_md_b, model_b, text_b)
 
         time_b = time.time() - start_b
         ans_b = text_b + f"\n\n(⏱ {time_b:.2f}s)"
@@ -388,10 +372,6 @@ with gr.Blocks(title="AI Chat with Code in Markdown") as demo:
 
     with gr.Row():
         deep_thinking_box = gr.Checkbox(label="Deep Thinking", value=False, visible=False)
-        streaming_box = gr.Checkbox(
-            label="Streaming",
-            value=False   # <-- steaming is OFF by default
-        )
         
         print("STEP 1: requesting model list from Ollama")
         models = ["None"] + get_installed_models()
@@ -479,13 +459,13 @@ with gr.Blocks(title="AI Chat with Code in Markdown") as demo:
     # Event handlers for UI actions: buttons and text input
     send_btn.click(
         fn=chat_fn,
-        inputs=[msg, state, model_a, model_b, deep_thinking_box, streaming_box, lang_selector],
+        inputs=[msg, state, model_a, model_b, deep_thinking_box, lang_selector],
         outputs=[msg, state, chat_box]
     )
-
+    
     msg.submit(
         fn=chat_fn,
-        inputs=[msg, state, model_a, model_b, deep_thinking_box, streaming_box, lang_selector],
+        inputs=[msg, state, model_a, model_b, deep_thinking_box, lang_selector],
         outputs=[msg, state, chat_box]
     )
     
