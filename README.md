@@ -49,7 +49,7 @@ Example models:
 ```
 ollama pull cogito:14b
 ollama pull qwen3.5:9b
-ollama pull qwen3.5:27b
+ollama pull gemma3n:e4b-it-fp16
 ollama pull ministral-3:14b
 ```
 
@@ -73,8 +73,16 @@ Start the server: ```python chat.py```
 
 Console output will show something like:
 ```
-Local server: http://127.0.0.1:7860
-LAN access: http://192.168.x.x:7860
+STEP 1: requesting model list from Ollama
+STEP 2: models detected: ['None', 'qwen3.5:9b', 'ministral-3:14b', 'qwen3.5:27b', 'gemma3n:e4b-it-fp16', 'cogito:14b']
+STEP 3: detecting local IP
+STEP 4: local IP detected: 192.168.10.15
+Local server: http://127.0.0.1:7860/?__theme=dark
+LAN access:  http://192.168.10.15:7860/?__theme=dark
+STEP 5: starting Gradio server. ⬆ Use local or LAN IP ⬆
+AI Chat version: v2.1.1 build 20260316
+* Running on local URL:  http://0.0.0.0:7860
+* To create a public link, set `share=True` in `launch()`.
 ```
 
 Open the link in your browser med Ctrl+ Lmb
@@ -94,9 +102,7 @@ Each question is numbered:
  #2
  #3
 ```
-Each answer is labelled with the model name.
-
-Example:
+Each answer is labelled with the model name. Example:
 ```
 ### cogito:14b
 response text
@@ -108,8 +114,7 @@ response text
 ### Deep Thinking mode
 
 > Some models support an optional Deep Thinking mode.
-
-> When enabled the system prompt includes an additional instruction that encourages deeper reasoning.
+When enabled the system prompt includes an additional instruction that encourages deeper reasoning.
 
 Currently enabled for:
 ```
