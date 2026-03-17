@@ -48,12 +48,6 @@ Download Ollama from: https://ollama.ai
 >- GPU significantly improves response time (if supported by Ollama).
 >- Larger models (14B+) require more RAM and VRAM.
 
-
-After installation verify:
-```
-ollama list
-```
-
 ### 2 Install models
 
 Example models:
@@ -63,8 +57,15 @@ ollama pull qwen3.5:9b
 ollama pull gemma3n:e4b-it-fp16
 ollama pull ministral-3:14b
 ```
+The example models above are only suggestions. You can use any models available in the Ollama library:
+[https://ollama.com/search?o=newest](https://ollama.com/search?o=newest)
 
-Installed models will automatically appear in the interface.
+After installation verify in terminal:
+```
+ollama list
+```
+For testing and comparison it is recommended to install at least two models.<br>
+The interface supports switching between models, so having multiple models allows you to compare responses and behavior directly. Installed models also will automatically appear in the interface.
 
 ### 3 Install Python packages
 
@@ -164,9 +165,7 @@ You can replace `ai.gif` with your own animation.
 
 If the file is missing, the image will not be displayed.
 
-### Version
-
-Current version:
+### Current version:
 
 v2.1.1 build 20260316
 
