@@ -25,6 +25,7 @@ Example interface:
 
 <img src="https://github.com/Soviet9773Red/ollama-gradio-chat/blob/main/img/gui.jpg" width="605">
 
+and example answers: https://github.com/Soviet9773Red/ollama-gradio-chat/blob/main/Answers.md
 
 ## Requirements
 
