@@ -91,7 +91,7 @@ STEP 4: local IP detected: 192.168.10.15
 Local server: http://127.0.0.1:7860/?__theme=dark
 LAN access:  http://192.168.10.15:7860/?__theme=dark
 STEP 5: starting Gradio server. ⬆ Use local or LAN IP ⬆
-AI Chat version: v2.1.1 build 20260316
+AI Chat version: v2.2.0 build 20260317
 * Running on local URL:  http://0.0.0.0:7860
 * To create a public link, set `share=True` in `launch()`.
 ```
@@ -166,7 +166,7 @@ If the file is missing, the image will not be displayed.<br>
 
 ## Current state and version
 
-v2.1.1 build 20260316<br>
+v2.2.0 build 20260317<br>
 Chat history is currently stored only in the browser session.
 
 ## Roadmap
