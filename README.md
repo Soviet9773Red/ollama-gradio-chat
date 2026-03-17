@@ -39,7 +39,7 @@ You must install:
 Download Ollama from: https://ollama.ai
 >Minimum system requirements:
 >- CPU: performance comparable to Intel i5-8400 or higher [9000+ PassMark](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-8400+%40+2.80GHz&id=3097)
->- RAM: 16 GB minimum (32-128 GB recommended)
+>- RAM: 16 GB min (32-128 GB recommended)
 >- GPU: NVIDIA GTX1660 6 GB or better (e.g. RTX 3060 12 GB)
 >- OS: Windows, Linux or macOS
 >  
