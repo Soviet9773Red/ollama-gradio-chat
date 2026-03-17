@@ -22,11 +22,10 @@ The interface is designed as a local AI laboratory for testing models and prompt
 
 ## Screenshot
 
-Example interface:
+Example interface: 
 
-Ollama + Gradio Local AI Lab
+<img src="https://github.com/Soviet9773Red/ollama-gradio-chat/blob/main/img/gui.jpg" width="605">
 
-(Interface shows numbered questions and answers from multiple models.)
 
 ## Requirements
 
