@@ -1,9 +1,8 @@
-# Local AI Chat (Ollama + Gradio) ollama-gradio-chat
+# Local AI Chat (Ollama + Gradio)
 
-Lightweight local AI chat interface for experimenting with multiple Ollama models.
+**ollama-gradio-chat** is lightweight local AI chat interface for experimenting with multiple Ollama models.
 
-This project provides a simple web interface that allows you to interact with local LLMs, compare responses from different models, and display answers in structured Markdown format.
-
+This project provides a simple web interface that allows you to interact with local LLMs, compare responses from different models, and display answers in structured Markdown format.<br>
 The interface is designed as a local AI laboratory for testing models and prompts.
 
 ## Features
@@ -125,7 +124,8 @@ response text
 ### Deep Thinking mode
 
 > Some models support an optional Deep Thinking mode.
-When enabled the system prompt includes an additional instruction that encourages deeper reasoning.
+> 
+> When enabled the system prompt includes an additional instruction that encourages deeper reasoning.
 
 Currently enabled for:
 ```
@@ -158,11 +158,9 @@ This interface can be used for:
 
 The interface uses a GIF animation displayed at the top.
 
-The file must be placed in the same directory as `chat.py`: ai.gif
-
-You can replace `ai.gif` with your own animation.
-
-If the file is missing, the image will not be displayed.
+The file `ai.gif` must be placed in the same directory as `chat.py`<br>
+You can replace `ai.gif` with your own animation.<br>
+If the file is missing, the image will not be displayed.<br>
 
 
 ## Current state and version
