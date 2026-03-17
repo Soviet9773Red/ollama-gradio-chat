@@ -164,11 +164,19 @@ You can replace `ai.gif` with your own animation.
 
 If the file is missing, the image will not be displayed.
 
-### Current version:
 
-v2.1.1 build 20260316
+## Current state and version
 
+v2.1.1 build 20260316<br>
+Chat history is currently stored only in the browser session.
 
-### License
+## Roadmap
 
-MIT License
+Planned improvements include:
+- Export chat history to Markdown (MD)
+- Export chat history to JSON
+- Persistent conversation storage
+  
+### MIT License
+
+@license (c) Alexander Soviet9773Red - https://github.com/Soviet9773Red/ollama-gradio-chat
