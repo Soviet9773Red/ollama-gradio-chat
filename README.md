@@ -167,7 +167,10 @@ If the file is missing, the image will not be displayed.<br>
 ## Current state and version
 
 v2.2.0 build 20260317<br>
+[changelog.md](https://github.com/Soviet9773Red/ollama-gradio-chat/blob/main/changelog.md)
+
 Chat history is currently stored only in the browser session.
+
 
 ## Roadmap
 
