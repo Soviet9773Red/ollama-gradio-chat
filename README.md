@@ -2,9 +2,13 @@
 
 **ollama-gradio-chat** is a lightweight AI chat interface for experimenting with local and cloud-based language models.
 
-The application provides a Gradio web interface with model comparison, session management, Markdown export, configurable themes, and support for multiple languages.
+Unlike the standard Ollama chat interface, it allows two independent models to run side-by-side in isolated A/B conversations, making it easy to compare responses, prompts, reasoning styles, and model behavior.
 
-It can be used as a local AI laboratory for testing models, prompts, and workflows.
+The application also provides chat save/load functionality using portable JSON files, allowing conversations to be archived, transferred between systems, organized manually, and restored later. This level of session management is not available in the standard Ollama client.
+
+Additional features include a Gradio web interface, Markdown export, configurable themes, multilingual support, and persistent session storage.
+
+It can be used as a personal AI laboratory for testing models, prompts, workflows, and long-term conversations.
 
 
 
