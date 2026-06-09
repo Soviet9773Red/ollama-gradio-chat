@@ -26,15 +26,6 @@ It can be used as a local AI laboratory for testing models, prompts, and workflo
 * Error reporting inside UI
 
 
-## Screenshot
-
-Example interface:
-
-```text
-<img src="img/gui.jpg" width="700">
-```
-
-
 ## Quick Start
 
 1. Install Ollama
@@ -47,7 +38,6 @@ Example interface:
 python aichat.py
 ```
 
----
 
 ## Installation
 
@@ -234,6 +224,7 @@ UI resources:
 ## GUI example
 
 The screenshot below shows the main interface with model selection, session management, theme controls, and A/B comparison mode.
+
 <img src="img/gui.jpg" width="656">
 
 ## Version
