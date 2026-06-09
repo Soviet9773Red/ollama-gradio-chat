@@ -87,17 +87,36 @@ ollama --version
 Example:
 
 ```bash
-ollama pull qwen3:8b
-ollama pull gemma3:12b
+ollama pull nemotron-3-ultra:cloud 
+ollama pull minimax-m3:cloud 
+ollama pull qwen3.5:9b
+ollama pull gpt-oss:20b 
 ```
 
 List installed models:
 
 ```bash
 ollama list
+
+
+C:\Users\User>ollama list
+NAME                          ID              SIZE      MODIFIED
+nemotron-3-ultra:cloud        6d5534b63bb    -         5 days ago
+minimax-m3:cloud              d03a99f45c0    -         6 days ago
+cogito-2.1:671b-cloud         36c9b0682ed    -         6 weeks ago
+devstral-2:123b-cloud         d37acab6a27    -         6 weeks ago
+gemma4:31b-cloud              c382fbbc73b    -         6 weeks ago
+qwen3-coder-next:cloud        aa626c1ae8d    -         2 months ago
+qwen3.5:397b-cloud            a7bf6f891c3    -         2 months ago
+gpt-oss:120b-cloud            56966227105    -         2 months ago
+mistral-large-3:675b-cloud    3130fda5a1e    -         2 months ago
+minimax-m2.7:cloud            06daa29c105    -         2 months ago
+devstral-small-2:24b          24277f0f62d    15 GB     2 months ago
+gpt-oss:20b                   17052f9142e    13 GB     2 months ago
+qwen3.5:9b                    648c96fa5fa    6.6 GB    2 months ago
+ministral-3:14b               4760c5aeb9d    9.1 GB    2 months ago
+cogito:14b                    d0cc86a2347    9.0 GB    11 months ago
 ```
-
-
 
 ## Running the Application
 
