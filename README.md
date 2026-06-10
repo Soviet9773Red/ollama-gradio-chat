@@ -253,7 +253,7 @@ Current version:
 2.7.0
 ```
 
-See: [changelog.md](hangelog.md) for release history.
+See: [changelog.md](changelog.md) for release history.
 
 
 
