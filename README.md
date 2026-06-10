@@ -184,7 +184,7 @@ Notes:
 
 ## Project Structure
 
-The project structure is documented separately: [Project Structure](project-structure.md)
+The project structure is documented separately: [Project Structure](project-stucture.md)
 
 
 ## Main Components
