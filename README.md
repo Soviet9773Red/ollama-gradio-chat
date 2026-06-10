@@ -262,3 +262,12 @@ See: [changelog.md](hangelog.md) for release history.
 MIT License
 
 (c) Alexander Soviet9773Red
+
+
+## Support the Project
+
+Your support does more than just buy me a coffee - it helps future feature development.
+
+[![Support Project](https://img.shields.io/badge/Support%20the%20Project-%F0%9F%8D%94%20Buy%20Me%20a%20Coffee-yellow?style=for-the-badge)](https://buymeacoffee.com/soviet9773red)
+
+Thank you!
