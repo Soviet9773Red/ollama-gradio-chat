@@ -45,36 +45,7 @@ python aichat.py
 
 ## Installation
 
-### 1. Clone repository
-
-```bash
-git clone https://github.com/Soviet9773Red/ollama-gradio-chat.git
-cd ollama-gradio-chat
-```
-
-### 2. Create virtual environment
-
-```bash
-python -m venv .venv
-```
-
-Activate:
-
-```bash
-# Windows
-.venv\Scripts\activate
-
-# Linux / macOS
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r req.txt
-```
-
-### 4. Install Ollama
+### 1. Install Ollama
 
 Download:
 
@@ -86,7 +57,7 @@ Verify:
 ollama --version
 ```
 
-### 5. Install models
+### 2. Install models
 
 Example:
 
@@ -97,7 +68,7 @@ ollama pull qwen3.5:9b
 ollama pull gpt-oss:20b 
 ```
 
-List installed models:
+List installed models (example):
 
 ```bash
 ollama list
@@ -120,6 +91,35 @@ gpt-oss:20b                   17052f9142e    13 GB     2 months ago
 qwen3.5:9b                    648c96fa5fa    6.6 GB    2 months ago
 ministral-3:14b               4760c5aeb9d    9.1 GB    2 months ago
 cogito:14b                    d0cc86a2347    9.0 GB    11 months ago
+```
+
+### Clone repository
+
+```bash
+git clone https://github.com/Soviet9773Red/ollama-gradio-chat.git
+cd ollama-gradio-chat
+```
+
+### 3. Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate:
+
+```bash
+# Windows
+.venv\Scripts\activate
+
+# Linux / macOS
+source .venv/bin/activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r req.txt
 ```
 
 ## Running the Application
@@ -184,12 +184,7 @@ Notes:
 
 ## Project Structure
 
-The project structure is documented separately:
-
-```text
-project-structure.txt
-```
-
+The project structure is documented separately: [Project Structure](project-structure.md)
 
 
 ## Main Components
