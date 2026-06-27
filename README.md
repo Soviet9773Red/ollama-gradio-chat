@@ -1,4 +1,4 @@
-# Local AI Chat (Ollama + Gradio)
+# Local AI Chat (Ollama <img src="img/ollama.png" width="30"> + Gradio <img src="img/gradio-logo.png" width="30">) 
 
 **ollama-gradio-chat** is a lightweight AI chat interface for experimenting with local and cloud-based language models.
 
@@ -48,14 +48,11 @@ python aichat.py
 ### 1. Install Ollama
 
 Download: https://ollama.com<br>
-Install and verify:
-```bash
-ollama --version
-```
+Install and verify: ```ollama --version```
 
 ### 2. Install AI models: https://ollama.com/search?o=newest
 
-Example (works without subscription at 2026-06-27):
+Use terminal.
 
 ```bash
 ollama pull nemotron-3-ultra:cloud 
@@ -63,13 +60,13 @@ ollama pull minimax-m3:cloud
 ollama pull qwen3.5:9b
 ollama pull gpt-oss:20b 
 ```
+Enable cloud models and web search in Ollama Settings UI<br>
 
-List installed models (example):
+List installed models: ```ollama list```
+
+Examples (works without subscription at 2026-06-27):
 
 ```bash
-ollama list
-
-
 C:\Users\User>ollama list
 NAME                          ID              SIZE      MODIFIED
 nemotron-3-ultra:cloud        6d5534b63bb    -         5 days ago
