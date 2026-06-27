@@ -52,12 +52,12 @@ python aichat.py
 3. Register at https://ollama.com/ and login (if you wish to use cloud models).
 4. Enable cloud models in the Ollama application Settings using the toggle<br><br>
 <img src="img/ollama-settings.jpg" width="500"><br>
-5. Enable API key and device key to access cloud models:<br>
+5. Enable **API key** and **Device key** to access cloud models:<br>
    Go to Settings → Keys in your browser: https://ollama.com/settings/keys.
 
 ### 2. Install AI models: https://ollama.com/search?o=newest
 
-Use terminal.
+Use the terminal.
 
 ```bash
 ollama pull nemotron-3-ultra:cloud 
@@ -68,7 +68,7 @@ ollama pull gpt-oss:20b
 
 List installed models: ```ollama list```
 
-Examples (works without subscription at 2026-06-27):
+Examples (work without a subscription as of 2026-06-27):
 
 ```bash
 C:\Users\User>ollama list
