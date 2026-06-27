@@ -47,19 +47,15 @@ python aichat.py
 
 ### 1. Install Ollama
 
-Download:
-
-https://ollama.com
-
-Verify:
-
+Download: https://ollama.com<br>
+Install and verify:
 ```bash
 ollama --version
 ```
 
-### 2. Install models
+### 2. Install AI models: https://ollama.com/search?o=newest
 
-Example:
+Example (works without subscription at 2026-06-27):
 
 ```bash
 ollama pull nemotron-3-ultra:cloud 
@@ -78,14 +74,11 @@ C:\Users\User>ollama list
 NAME                          ID              SIZE      MODIFIED
 nemotron-3-ultra:cloud        6d5534b63bb    -         5 days ago
 minimax-m3:cloud              d03a99f45c0    -         6 days ago
-cogito-2.1:671b-cloud         36c9b0682ed    -         6 weeks ago
 devstral-2:123b-cloud         d37acab6a27    -         6 weeks ago
 gemma4:31b-cloud              c382fbbc73b    -         6 weeks ago
 qwen3-coder-next:cloud        aa626c1ae8d    -         2 months ago
 qwen3.5:397b-cloud            a7bf6f891c3    -         2 months ago
 gpt-oss:120b-cloud            56966227105    -         2 months ago
-mistral-large-3:675b-cloud    3130fda5a1e    -         2 months ago
-minimax-m2.7:cloud            06daa29c105    -         2 months ago
 devstral-small-2:24b          24277f0f62d    15 GB     2 months ago
 gpt-oss:20b                   17052f9142e    13 GB     2 months ago
 qwen3.5:9b                    648c96fa5fa    6.6 GB    2 months ago
