@@ -47,11 +47,13 @@ python aichat.py
 
 ### 1. Install Ollama
 
-Download: https://ollama.com<br>
-Install and verify: ```ollama --version```<br>
-Enable cloud models and web search in Ollama application Settings using toggle<br>
-Enable API key and device key to access cloud models: Settings-Keys (in browser https://ollama.com/settings/keys )
-
+1. Download: https://ollama.com<br>
+2. Install and verify: ```ollama --version```<br>
+3. Register at https://ollama.com/ and login (if you wish to use cloud models).
+4. Enable cloud models in the Ollama application Settings using the toggle<br><br>
+<img src="img/ollama-settings.jpg" width="500"><br>
+5. Enable API key and device key to access cloud models:<br>
+   Go to Settings → Keys in your browser: https://ollama.com/settings/keys.
 
 ### 2. Install AI models: https://ollama.com/search?o=newest
 
