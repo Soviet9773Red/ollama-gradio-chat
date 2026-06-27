@@ -49,7 +49,7 @@ python aichat.py
 
 Download: https://ollama.com<br>
 Install and verify: ```ollama --version```<br>
-Enable cloud models and web search in Ollama application Settings using toggle
+Enable cloud models and web search in Ollama application Settings using toggle<br>
 Enable API key and device key to access cloud models: Settings-Keys (in browser https://ollama.com/settings/keys )
 
 
