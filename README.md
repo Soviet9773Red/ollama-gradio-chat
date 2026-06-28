@@ -145,8 +145,7 @@ Requirements depend on model size.
 | Component | Recommended             |
 | --------- | ----------------------- |
 | CPU       | Intel i5-8400 or better |
-| RAM       | 16 GB minimum           |
-| RAM       | 32 GB+ recommended      |
+| RAM       | 16 GB min. / 32 GB+ recommended |
 | GPU       | GTX 1660 6 GB or better |
 | OS        | Windows / Linux / macOS |
 
