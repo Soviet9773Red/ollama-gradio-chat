@@ -78,7 +78,6 @@ minimax-m3:cloud              d03a99f45c0    -         6 days ago
 devstral-2:123b-cloud         d37acab6a27    -         6 weeks ago
 gemma4:31b-cloud              c382fbbc73b    -         6 weeks ago
 qwen3-coder-next:cloud        aa626c1ae8d    -         2 months ago
-qwen3.5:397b-cloud            a7bf6f891c3    -         2 months ago
 gpt-oss:120b-cloud            56966227105    -         2 months ago
 devstral-small-2:24b          24277f0f62d    15 GB     2 months ago
 gpt-oss:20b                   17052f9142e    13 GB     2 months ago
